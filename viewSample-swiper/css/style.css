@@ -1,0 +1,118 @@
+html{
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+html,body {
+    height: 100%;
+}
+body {
+    background-color: #727272;
+    margin: 0;
+    font-family: Verdana, sans-serif,Arial, "メイリオ", "ヒラギノ角ゴ Pro W3", "Osaka", "MS Pゴシック", 'g_icon';
+}
+img {
+    border: none;   
+}
+/* ---------header----------------------------------------------------------- */
+header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    z-index: 100;
+}
+.pcHeader {
+    width: 100%;
+}
+/* close */
+.close span {
+    background-color: #fff;
+}
+/* バーガーメニュ */
+.menu-btn {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.menu-btn span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.menu-btn, .menu-btn span {
+    display: inline-block;
+    transition: all .5s;
+    box-sizing: border-box;
+}
+.menu-btn span:nth-of-type(1) {
+    top: 0;
+}
+.menu-btn span:nth-of-type(2) {
+    top: 20px;
+}
+.menu-btn span:nth-of-type(3) {
+    bottom: 0;
+}
+.open span:nth-of-type(1) {
+    -webkit-transform: translateY(20px) rotate(-45deg);
+    transform: translateY(20px) rotate(-45deg);
+  }
+.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+.open span:nth-of-type(3) {
+    -webkit-transform: translateY(-20px) rotate(45deg);
+    transform: translateY(-20px) rotate(45deg);
+  }
+/* ---------swiper -----------------------------------------------------------*/
+.silde-item .slide-contener .swiper-initialized .swiper-horizontal .swiper-pointer-events {
+    position: relative;
+    z-index: 1;
+}    
+.swiper-container {
+    margin:  0 auto;
+    height: 100vh;
+    width: 80vw;
+    overflow: hidden;
+    background-color: #fff;
+}
+.swiper-wrapper {
+    height: 100vh;
+    margin:  0 auto;
+    width: 80vw;
+}
+.swiper-item {
+    display: flex;
+    height: 100vh;
+    gap: 0;
+}
+.swiper-item img {
+    object-fit: contain;
+}
+.swiper-button-prev, .swiper-button-next {
+    justify-content: space-between;
+    width: 15vw;
+    height: 100vh;
+    top: 0;
+    margin: 0;
+    z-index: 1;
+}
+.swiper-rtl .swiper-button-next {
+    left: 0;
+    cursor: w-resize;
+}
+.swiper-rtl .swiper-button-prev {
+    right: 0;
+    cursor: e-resize;
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+    display: none;
+}
+/* ---------footer--------------------------------------------------------- */

@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="footer-link">
-                    <a href="" class="footer-logo"><img src="images/manga_logo_black.png" alt=""></a>
+                    <a href="" class="footer-logo"><img src="images/manga_logo_white.png" alt=""></a>
                     <div class="footer-btn">
                         <a href="">公式Twitter</a>
                         <a href="">京都芸術大学マンガ学科</a>
